@@ -1,0 +1,54 @@
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.vite/
+.cache/
+.eslintcache
+*.har
+*.trace.zip
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+.envrc
+.npmrc
+*.cer
+*.crt
+*.der
+*.jks
+*.keystore
+*.mobileprovision
+*.pem
+*.key
+*.p12
+*.pfx
+local.properties
+credentials*.json
+service-account*.json
+auth*.json
+storage-state*.json
+
+# Private app data and recordings
+*.bumpcompanion
+*.db
+*.sqlite*
+recordings/
+diagnostics/
+exports/
+
+# Editors, logs, and operating-system files
+.idea/
+.vscode/
+*.log
+*.tmp
+*.swp
+*.swo
+*.orig
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a reproducible BumpCompanion Web problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach private location history, bump exports, credentials, or raw sensor recordings.
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - iPhone Safari
+        - Installed iPhone PWA
+        - Desktop Safari/WebKit
+        - Chromium-based browser
+        - Other browser
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Device and OS/browser versions
+      placeholder: iPhone model, iOS version, Safari version
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Include expected behavior and safe reproduction steps.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Additional context
+      description: Mention whether the app was visible, installed, offline, mounted, and in an active drive.
